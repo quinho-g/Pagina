@@ -1,0 +1,249 @@
+     /*-------Index-----*/
+     /*<!---Licença-->
+     <!----Esse página foi criada por Quinho Guedes em 2024-->
+     <!----Esse código esta livre para usar, editar ou vender. De nenhoma forma o alto se responsabiliza pelos danos causados ou usar esse código-->
+     <!--final da licença-->
+     <!----O uso da licença é obrigatorio e deve estar em todas as páginas do seu site-->*/
+     
+     html {
+            scroll-behavior: smooth;
+        } 
+     
+       body {
+            margin: 0px;
+            padding: 10px;
+            box-shadow: inset 0 0 1px rgb(49, 2, 239), inset 0 0 3px rgb(49, 2, 239), inset 0 0 6px rgb(49, 2, 239), inset 0 0 10px rgb(49, 2, 239), inset 0 0 13px rgb(49, 2, 239), inset 0 0 17px rgb(49, 2, 239);
+            background-color: black;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .grid2 {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 15px;
+        }
+
+        .centro {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .foto {
+            border-radius: 50%;
+            width: 110px;
+            height: 110px;
+            overflow: hidden;
+            box-shadow: 0 0 1px rgb(48, 13, 191), 0 0 3px rgb(48, 13, 191), 0 0 6px rgb(48, 13, 191), 0 0 10px rgb(48, 13, 191), 0 0 13px rgb(48, 13, 191), 0 0 17px rgb(48, 13, 191);
+            animation: foto 7s ease-in-out alternate infinite;
+            }
+
+        @keyframes foto {
+            from {
+              transform: rotate(30deg);
+            }
+
+            to {
+              transform: rotate(-30deg);
+              }
+        }
+
+
+        .tjustify {
+            font-family: Arial, sans-serif;
+            justify-content: center;
+            color: white;
+            }
+
+        .tjustify h3 {
+            color: white;
+            font-family: Arial, sans-serif;
+            text-transform: uppercase;
+            font-size: 30px;
+            }
+        
+        .gridf {
+           display: grid;
+           grid-template-columns: repeat(2, auto);
+           padding: 18px;
+           justify-content: center;
+           gap: 40px;
+           margin: 8px;
+           align-items: center;
+           text-align: justify;
+           }
+
+        .noline {
+            justify-content: justify;
+            color: white;
+            line-height: 19px;
+            text-transform: uppercase;
+            font-weight: bold;
+            }
+
+        .answer img {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            margin: 8px;
+            margin-right: 20px;
+            box-shadow: 0 0 1px rgb(49, 2, 239), 0 0 3px rgb(49, 2, 239), 0 0 6px rgb(49, 2, 239), 0 0 10px rgb(49, 2, 239);
+        }
+
+        .answer h2 {
+            font-size: 17px;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        
+        .answer h3 {
+            font-size: 14px;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .answer {
+            display: flex;
+            position: relative;
+            background-color: rgb(16, 15, 63);
+            font-size: 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            text-transform: uppercase;
+            justify-content: justify;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            min-height: 100px;
+            height: auto;
+            width: auto;
+            margin: 10px;
+            }
+        
+        .answer::after {
+            content:"";
+            z-index: -1;
+            position: absolute;
+            left: -5px;
+            right: -5px;
+            top: -5px;
+            bottom: -5px;
+            background: linear-gradient(to right top, rgb(49, 2, 239),rgba(49, 13, 191, 0.221), rgb(49, 2, 239));
+            border-radius: 18px;
+            }
+        /*-------F --- INDEX -----*/
+
+        
+            .botaopp { 
+                font-family: Arial, sans-serif;
+                text-transform: uppercase;
+                display: flex;
+                position: relative;
+                background-color: rgba(49, 13, 191, 0.244);
+                margin: 20px auto;
+                height: 50px;
+                width: 25vh;
+                font-size: 18px;
+                padding: 7px;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                border-radius: 8px;
+                color: white;
+                margin-top: 27px;
+                box-shadow: inset 0 0 5px rgb(48, 13, 191), inset 0 0 7px rgb(48, 13, 191), inset 0 0 10px rgb(48, 13, 191), inset 0 0 15px rgb(48, 13, 191);
+                }
+
+        /* Responsividade para telas menores que 768px (celulares) */
+        @media screen and (max-width: 768px) {
+
+        .foto {
+            width: 90px;
+            height: 90px;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin-bottom: 3px;
+            }
+
+        .tjustify {
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            color: white;
+            }
+        
+        .gridf {
+           grid-template-columns: auto;
+           justify-content: center;
+           text-align: center;
+           align-items: center;
+           padding: 7px;
+           gap: 0px;
+           }
+
+        .noline {
+            line-height: 15px;
+            font-size: 12px;
+            margin-top: 5px;
+            padding: 0px;
+            }
+
+        .tjustify h3 {
+            font-size: 20px;
+            }
+
+            .answer::after {
+                border-radius: 10px;
+            }
+
+            .answer {
+                border-radius: 10px;
+                height: auto;
+                min-height: 75px;
+                margin: 10px;
+                font-size: 14px;
+                padding: 6px;
+                }
+
+            .answer img {
+                width: 70px;
+                height: 70px;
+                border-radius: 6px;
+                margin: 7px;
+                margin-right: 12px;
+            }
+    
+            .answer h2 {
+                font-size: 15px;
+            }
+            
+            .answer h3 {
+                font-size: 11px;
+            }
+
+            .grid2 {
+                grid-template-columns: auto;
+                gap: 8px;
+            }
+
+
+            .botaopp { 
+                font-size: 14px;
+                padding: 3px;
+                margin: 20px auto;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-radius: 4px;
+                }
+
+            section {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+}
+   
